@@ -1,41 +1,68 @@
-# Heart_Failure_Prediction
-Employing supervised machine learning algorithms to predict the accurate results with relevance to one's heart health. 
+# Heart Failure Prediction and Analytics
 
-## Target Variable
-Targeting 'HeartDisease' as the variable is justified due to its substantial healthcare impact, clinical relevance, preventive potential, quality data, ML challenge, and public health value.
- 
+### Team: Data Driven | Advanced Data Science | INFO 7390
+
+## Project Overview
+Heart failure, a debilitating condition, affects millions globally, compromising the heart's ability to pump blood efficiently. Our project utilizes supervised machine learning algorithms to predict heart disease risks, aiming to aid early detection and reduce mortality by providing accurate assessments of an individual's heart condition.
+
+The models focus on identifying patients at risk of heart disease based on key health metrics, helping healthcare providers make informed decisions. 
+
+## Objective
+The goal of this project is to develop machine learning models that can accurately predict heart disease, thereby assisting in preventive healthcare strategies and reducing the global burden of heart failure.
+
+## Dataset
+The dataset used in this project includes key features related to heart disease risk, such as:
+
+- **Age**: Age of the patient in years.
+- **Sex**: Male or Female.
+- **Chest Pain Type**: [Typical Angina (TA), Atypical Angina (ATA), Non-Anginal Pain (NAP), Asymptomatic (ASY)].
+- **Resting Blood Pressure**: Measured in mm Hg.
+- **Cholesterol**: Serum cholesterol in mg/dl.
+- **Fasting Blood Sugar**: Binary feature indicating whether fasting blood sugar > 120 mg/dl.
+- **Resting ECG**: [Normal, ST-T wave abnormality, Left ventricular hypertrophy].
+- **Maximum Heart Rate Achieved**: Numeric value between 60 and 202.
+- **Exercise Induced Angina**: [Yes, No].
+- **Oldpeak**: ST depression induced by exercise relative to rest.
+- **ST Slope**: [Upsloping, Flat, Downsloping].
+- **Heart Disease**: Target variable, where 1 indicates heart disease and 0 indicates normal.
+
 ## Machine Learning Algorithms
-Machine learning algorithms play a crucial role in heart disease prediction by leveraging patterns and insights from medical data to provide accurate assessments of an individual's risk. The algorithms that we have employed for our project is as follows:
-1. 	Decision Tree
-2. 	Random Forest
-3. 	Multilayer Perceptron Classifier
-4. 	Support Vector Machine
-5. 	Extra Tree
-6. 	Logistic Regression
-7. 	K-Nearest Neighbors
-8. 	Gradient Boosting Classifier
-9. 	Stacking Classifier 
- 
-## Data Set Description
-Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.
-1. 	Age: age of the patient [years]
-2. 	Sex: sex of the patient [M: Male, F: Female]
-3. 	ChestPainType: chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
-4. 	RestingBP: resting blood pressure [mm Hg]
-5. 	Cholesterol: serum cholesterol [mm/dl]
-6. 	FastingBS: fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]
-7. 	RestingECG: resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]
-8. 	MaxHR: maximum heart rate achieved [Numeric value between 60 and 202]
-9. 	ExerciseAngina: exercise-induced angina [Y: Yes, N: No]
-10.  Oldpeak: oldpeak = ST [Numeric value measured in depression]
-11.  ST_Slope: the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]
-12.  HeartDisease: output class [1: heart disease, 0: Normal]
- 
-## Additional Analytics & Conclusion 
-From the employed list of algorithms, Random Forest and additionally Stacking Classifier showed the top performance with the following performance metrics,
-Random Forest – Train Accuracy:  92.52% | Test Accuracy: 85.814% | f1 Score: 86.64%
-Stacking Classifier – Train Accuracy:  93.45% | Test Accuracy: 84.42% | f1 Score:  85.71%
+We employed multiple machine learning models to predict heart disease:
 
- 
-## Scope of Future Work
-Although the Random Forest and Stacking Classifier exhibited the top performance yet, we believe that by integrating ECG analytics we could hike the predictions for obtaining higher accuracies, further resulting in decisiveness in saving lives on humanitarian grounds.  
+- Decision Tree
+- Random Forest
+- Multilayer Perceptron Classifier
+- Support Vector Machine
+- Extra Trees Classifier
+- Logistic Regression
+- K-Nearest Neighbors
+- Gradient Boosting Classifier
+- Stacking Classifier
+
+## Best Performing Models
+- **Random Forest**: 
+  - Train Accuracy: 92.52%
+  - Test Accuracy: 85.81%
+  - F1 Score: 86.64%
+  
+- **Stacking Classifier**: 
+  - Train Accuracy: 93.45%
+  - Test Accuracy: 84.42%
+  - F1 Score: 85.71%
+
+## Conclusion
+The Random Forest and Stacking Classifier models demonstrated the highest performance in heart disease prediction, making them ideal for early detection of heart failure risks. Future enhancements could include integrating advanced ECG analytics to further improve prediction accuracy.
+
+## Scope for Future Work
+We believe incorporating advanced ECG analytics could enhance the accuracy of our models. Additionally, further tuning of hyperparameters for the top models could lead to even better performance, potentially saving more lives by improving early detection and treatment strategies.
+
+## Installation and Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hrishikeshwarrier4/Heart_Failure_Prediction.git
+2. Run the jupyter notebook
+   ```bash
+   jupyter notebook HeartFailurePrediction&Analytics_TeamDataDriven_INFO7390_Summer23.ipynb
+
+
